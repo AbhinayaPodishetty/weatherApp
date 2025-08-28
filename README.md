@@ -19,5 +19,7 @@ This project was developed as part of a learning task to practice:
 - Fetching data from an API
 
 - Building a simple UI
+  
 Note: This live demo is hosted on CodeSandbox (temporary public link).
   
+
