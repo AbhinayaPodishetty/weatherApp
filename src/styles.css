@@ -1,0 +1,136 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(270deg, #6dd5ed, #2193b0, #cc2b5e, #753a88);
+  background-size: 800% 800%;
+  animation: gradientShift 18s ease infinite;
+  color: #fff;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Title */
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Input + Button group */
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.input-group input {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  width: 220px;
+}
+
+.input-group button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #ff9800;
+  color: #fff;
+  font-weight: 600;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.input-group button:hover {
+  background: #e68900;
+  transform: scale(1.05);
+}
+
+/* Loading & Error */
+.loading {
+  color: #ffeb3b;
+  font-size: 1.1rem;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+.error {
+  color: #f44336;
+  font-size: 1.1rem;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+/* Weather card */
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.8s ease;
+  margin-top: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+}
+
+.card p {
+  font-size: 1.2rem;
+  margin: 5px 0;
+
+  font-weight: bold;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .title {
+    font-size: 2rem;
+  }
+  .input-group {
+    flex-direction: column;
+    align-items: center;
+  }
+  .input-group input {
+    width: 100%;
+  }
+  .card {
+    width: 100%;
+    max-width: 350px;
+  }
+}
