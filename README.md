@@ -18,9 +18,12 @@ This project was developed as part of a learning task to practice:
 - Working with React
 - Fetching data from an API
 - Building a simple UI
+
+Live demo link: https://gs94cs.csb.app/ 
   
 Note: This live demo is hosted on CodeSandbox (temporary public link).
   
+
 
 
 
