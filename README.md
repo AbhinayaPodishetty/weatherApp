@@ -17,12 +17,10 @@ The app is built with React and uses the OpenWeatherMap API to fetch live data.
 This project was developed as part of a learning task to practice:
 - Working with React
 - Fetching data from an API
-
-Note: This live demo is hosted on CodeSandbox (temporary public link).
-
 - Building a simple UI
   
 Note: This live demo is hosted on CodeSandbox (temporary public link).
   
+
 
 
